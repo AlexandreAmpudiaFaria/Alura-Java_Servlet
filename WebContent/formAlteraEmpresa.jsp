@@ -1,3 +1,5 @@
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<c:url value="/alteraEmpresa" var="linkServletNovaEmpresa"/>
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -11,11 +13,12 @@
 </head>
 
 <body>
-    <div class="container">
-        <form action="/gerenciador/novaEmpresa" method="POST">
+    <div class="container mt-5">
+        <form action="${linkServletNovaEmpresa}" method="POST">
             <label for="nome">Nome:</label>
-            <input type="text" name="nome" id="nome">
-            <button type="submit" class="btn btn-success">Cadastrar</button>
+            <input type="text" name="nome" id="nome" value="${empresa.nome}">
+            <button type="submit" class="btn btn-success">Alterar</button>
+            <input type="hidden" name="id" id="id" value="${empresa.id}">
         </form>
     </div>
 </body>

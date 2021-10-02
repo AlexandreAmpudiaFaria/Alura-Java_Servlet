@@ -4,7 +4,7 @@ public class Empresa {
 
 	private Integer id;
 	private String nome;
-	
+	//private Date dataAbertura = new Date();
 	
 	public Integer getId() {
 		return id;
@@ -18,6 +18,5 @@ public class Empresa {
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
-	
 	
 }
