@@ -14,6 +14,9 @@
 
 <body>
     <div class="container mt-5">
+    <c:import url="logout-parcial.jsp"/>
+    <br>    
+    
         <form action="${linkServletNovaEmpresa}" method="POST">
             <label for="nome">Nome:</label>
             <input type="text" name="nome" id="nome" value="${empresa.nome}">

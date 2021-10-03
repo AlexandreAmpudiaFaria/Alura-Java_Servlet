@@ -14,6 +14,14 @@
 </head>
 <body>
     <div class="container col-md-6">
+    
+    <p>
+     Usuario logado: ${usuarioLogado.login}
+    </p>
+    <br>
+    
+    <c:import url="logout-parcial.jsp"/>   
+    
 
         <div>
             <c:if test="${not empty empresa}">
