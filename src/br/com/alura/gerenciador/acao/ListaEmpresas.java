@@ -19,6 +19,11 @@ public class ListaEmpresas implements Acao{
 		request.setAttribute("empresas", lista);
 		
 		System.out.println("listando empresa");		
+		
+		
+		
+		
+		
 		return "forward:listaEmpresas.jsp";
 	}
 	
